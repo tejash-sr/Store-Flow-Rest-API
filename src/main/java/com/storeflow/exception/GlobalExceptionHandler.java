@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -61,7 +60,7 @@ public class GlobalExceptionHandler {
         );
 
         ErrorResponse error = ErrorResponse.builder()
-            .timestamp(ZonedDateTime.now().format(DateTimeFormatter.ISO_ZONED_DATE_TIME))
+            .timestamp(Instant.now().toString())
             .status(HttpStatus.BAD_REQUEST.value())
             .error("Validation Failed")
             .message("One or more fields have validation errors")
@@ -87,7 +86,7 @@ public class GlobalExceptionHandler {
 
     private ErrorResponse buildErrorResponse(HttpStatus status, String message, String path) {
         return ErrorResponse.builder()
-            .timestamp(ZonedDateTime.now().format(DateTimeFormatter.ISO_ZONED_DATE_TIME))
+            .timestamp(Instant.now().toString())
             .status(status.value())
             .error(status.getReasonPhrase())
             .message(message)

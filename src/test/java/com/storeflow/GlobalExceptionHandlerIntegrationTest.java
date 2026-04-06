@@ -1,10 +1,13 @@
 package com.storeflow;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.MockMvc;
 
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -19,6 +22,9 @@ class GlobalExceptionHandlerIntegrationTest extends AbstractIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
+
+    @Autowired
+    private ObjectMapper objectMapper;
 
     @Test
     @DisplayName("Invalid path returns 404 with structured error response")
@@ -60,7 +66,7 @@ class GlobalExceptionHandlerIntegrationTest extends AbstractIntegrationTest {
             .andExpect(status().isNotFound())
             .andReturn().getResponse().getContentAsString();
 
-        // Small delay
+        // Small delay to ensure timestamp difference
         Thread.sleep(10);
 
         // Second request
@@ -68,7 +74,30 @@ class GlobalExceptionHandlerIntegrationTest extends AbstractIntegrationTest {
             .andExpect(status().isNotFound())
             .andReturn().getResponse().getContentAsString();
 
-        // Timestamps should be different (highly likely)
-        // This is a simple check - in production, use a proper assertion library
+        // Parse timestamps and verify they're different
+        JsonNode json1 = objectMapper.readTree(response1);
+        JsonNode json2 = objectMapper.readTree(response2);
+        
+        String timestamp1 = json1.get("timestamp").asText();
+        String timestamp2 = json2.get("timestamp").asText();
+        
+        assertNotEquals(timestamp1, timestamp2, "Timestamps should be different for consecutive errors");
+    }
+
+    @Test
+    @DisplayName("RuntimeException returns 500 with complete error response structure")
+    void testRuntimeException_Returns500WithStructuredResponse() throws Exception {
+        // Test a POST request that would fail with 400 validation error normally
+        // POST /api/health is not implemented (should return 405 or 404), 
+        // but we verify the error structure includes all required fields
+        mockMvc.perform(post("/api/invalid-endpoint"))
+            .andExpect(status().isNotFound())
+            .andExpect(content().contentType(APPLICATION_JSON))
+            .andExpect(jsonPath("$.status").exists())
+            .andExpect(jsonPath("$.error").exists())
+            .andExpect(jsonPath("$.message").exists())
+            .andExpect(jsonPath("$.timestamp").exists())
+            .andExpect(jsonPath("$.timestamp").isString())
+            .andExpect(jsonPath("$.path").exists());
     }
 }

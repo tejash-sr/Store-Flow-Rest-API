@@ -17,8 +17,8 @@ spring:
         use_sql_comments: true
   datasource:
     url: jdbc:postgresql://localhost:5432/storeflow
-    username: postgres
-    password: postgres
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
   flyway:
     enabled: true

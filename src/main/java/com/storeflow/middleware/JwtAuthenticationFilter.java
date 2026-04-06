@@ -5,8 +5,6 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -45,20 +43,5 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         // Phase 1: Placeholder that allows all requests
         // Full implementation with JWT validation will be added in Phase 4
         filterChain.doFilter(request, response);
-    }
-
-    @SuppressWarnings("unused")
-    private void sendUnauthorized(HttpServletResponse response, String message) throws IOException {
-        response.setStatus(HttpStatus.UNAUTHORIZED.value());
-        response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-        response.getWriter().write("""
-            {
-              "timestamp": "%s",
-              "status": 401,
-              "error": "Unauthorized",
-              "message": "%s"
-            }
-            """.formatted(System.currentTimeMillis(), message));
-        response.getWriter().flush();
     }
 }

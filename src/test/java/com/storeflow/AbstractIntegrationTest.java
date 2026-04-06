@@ -12,9 +12,18 @@ import org.springframework.test.context.ActiveProfiles;
  * - @AutoConfigureMockMvc: Configures MockMvc for controller testing
  * - @ActiveProfiles("test"): Uses application-test.yml configuration
  * 
- * Prerequisites:
- * - PostgreSQL container must be running (start with: docker-compose -f docker-compose.test.yml up)
- * - Container listens on localhost:5433 with database: storeflow_rest_api
+ * Container Setup:
+ * - PostgreSQL container must be running via: docker-compose -f docker-compose.test.yml up
+ * - Database: storeflow_rest_api
+ * - Username: storeflow_user (configurable via env vars)
+ * - Password: storeflow_test_password (configurable via env vars)
+ * - Port: 5433
+ * 
+ * Why manual docker-compose instead of @Testcontainers:
+ * - Windows Docker Desktop has socket connection limitations with Testcontainers
+ * - docker-compose.test.yml provides reliable, reusable container management
+ * - Integrates with CI/CD pipelines more predictably
+ * - Container persists across test runs for faster development cycles
  * 
  * All integration tests must extend this class to inherit the base setup.
  * 
@@ -32,6 +41,7 @@ import org.springframework.test.context.ActiveProfiles;
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
 public abstract class AbstractIntegrationTest {
-    // No container management - assumes docker-compose.test.yml is running
+    // Container is managed externally via docker-compose.test.yml
     // Tests connect to localhost:5433 (configured in application-test.yml)
+    // Start with: docker-compose -f docker-compose.test.yml up
 }
