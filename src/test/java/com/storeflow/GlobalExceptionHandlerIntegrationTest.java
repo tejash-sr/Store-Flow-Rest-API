@@ -34,10 +34,13 @@ class GlobalExceptionHandlerIntegrationTest extends AbstractIntegrationTest {
     }
 
     @Test
-    @DisplayName("POST to health endpoint (wrong method) returns 405 or 404")
+    @DisplayName("POST to health endpoint (wrong method) returns 405 Method Not Allowed")
     void testWrongHttpMethod_Returns405OrNotFound() throws Exception {
         mockMvc.perform(post("/api/health"))
-            .andExpect(status().isNotFound());
+            .andExpect(status().isMethodNotAllowed())
+            .andExpect(content().contentType(APPLICATION_JSON))
+            .andExpect(jsonPath("$.status").value(405))
+            .andExpect(jsonPath("$.error").value("Method Not Allowed"));
     }
 
     @Test

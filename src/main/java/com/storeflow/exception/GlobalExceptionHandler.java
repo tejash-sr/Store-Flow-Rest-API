@@ -8,6 +8,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.NoHandlerFoundException;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -35,6 +36,19 @@ public class GlobalExceptionHandler {
         );
         
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
+    }
+
+    @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
+    public ResponseEntity<ErrorResponse> handleMethodNotSupported(HttpRequestMethodNotSupportedException ex) {
+        log.warn("405 Method Not Allowed: {} {}", ex.getMethod(), ex.getMessage());
+        
+        ErrorResponse error = buildErrorResponse(
+            HttpStatus.METHOD_NOT_ALLOWED,
+            "The HTTP method is not supported for this endpoint",
+            null
+        );
+        
+        return ResponseEntity.status(HttpStatus.METHOD_NOT_ALLOWED).body(error);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
