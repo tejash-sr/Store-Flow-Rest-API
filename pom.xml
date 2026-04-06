@@ -12,7 +12,7 @@
 	<artifactId>storeflow-api</artifactId>
 	<version>0.1.0</version>
 	<name>StoreFlow API</name>
-	<description>Production-grade Inventory & Order Management REST API</description>
+	<description>Production-grade Inventory &amp; Order Management REST API</description>
 	<properties>
 		<java.version>21</java.version>
 		<testcontainers.version>1.19.3</testcontainers.version>
