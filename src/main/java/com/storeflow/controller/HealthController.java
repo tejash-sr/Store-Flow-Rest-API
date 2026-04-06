@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.ZonedDateTime;
+import java.time.Instant;
 import java.time.format.DateTimeFormatter;
 
 /**
@@ -28,7 +28,7 @@ public class HealthController {
         
         HealthResponse response = HealthResponse.builder()
             .status("UP")
-            .timestamp(ZonedDateTime.now().format(DateTimeFormatter.ISO_ZONED_DATE_TIME))
+            .timestamp(Instant.now().toString())
             .jvmUptimeMs(getJvmUptimeMs())
             .build();
         
