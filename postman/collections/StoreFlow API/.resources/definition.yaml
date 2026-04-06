@@ -1,0 +1,16 @@
+$kind: collection
+name: StoreFlow API
+description: |-
+  Phase 1 collection for the StoreFlow Spring Boot REST API.
+
+  Covers health-check and system diagnostic endpoints only.
+  Base URL is configured via the {{base_url}} variable (default: http://localhost:8080).
+
+  Folders:
+  - Health  – application-level health endpoint
+  - System  – actuator and error-handling validation endpoints
+
+  Prerequisites: Set the "StoreFlow Local" environment (or define {{base_url}}).
+variables:
+  - key: base_url
+    value: 'http://localhost:8080'

@@ -1,0 +1,3 @@
+$kind: collection
+name: System
+description: 'System-level diagnostics — Spring Boot Actuator and error-handling validation.'

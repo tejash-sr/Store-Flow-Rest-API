@@ -1,0 +1,19 @@
+$kind: http-example
+name: '200 OK – Actuator Health UP'
+request:
+  url: 'http://localhost:8080/actuator/health'
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: Content-Type
+      value: application/json
+    - key: X-Trace-Id
+      value: 'b2c3d4e5-f6a7-8901-bcde-f12345678901'
+  body:
+    type: json
+    content: |-
+      {
+        "status": "UP"
+      }
