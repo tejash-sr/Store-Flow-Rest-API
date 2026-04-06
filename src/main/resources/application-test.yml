@@ -12,11 +12,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: false
-  datasource:
-    url: jdbc:postgresql://localhost:5433/storeflow_rest_api
-    driver-class-name: org.postgresql.Driver
-    username: storeflow_user
-    password: storeflow_test_password
   flyway:
     enabled: true
     locations: classpath:db/migration
