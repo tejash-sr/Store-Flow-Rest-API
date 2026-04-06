@@ -41,7 +41,7 @@ class GlobalExceptionHandlerTest {
     }
 
     @Test
-    @DisplayName("Handle generic exception returns HTTP 500")
+    @DisplayName("Handle generic exception returns HTTP 500 with complete error response")
     void testHandleGenericException_Returns500() {
         RuntimeException ex = new RuntimeException("Unexpected error");
         
@@ -51,6 +51,9 @@ class GlobalExceptionHandlerTest {
         assertNotNull(response.getBody());
         assertEquals(500, response.getBody().getStatus());
         assertEquals("Internal Server Error", response.getBody().getError());
+        assertNotNull(response.getBody().getTimestamp());
+        assertNotNull(response.getBody().getMessage());
+        assertEquals("An unexpected error occurred", response.getBody().getMessage());
     }
 
     @Test

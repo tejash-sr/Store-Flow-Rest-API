@@ -5,8 +5,6 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -41,17 +39,5 @@ public class RateLimitingFilter extends OncePerRequestFilter {
         // Phase 1: Placeholder that allows all requests
         // Full implementation with Bucket4j will be added in Phase 4
         filterChain.doFilter(request, response);
-    }
-
-    @SuppressWarnings("unused")
-    private void sendRateLimitExceeded(HttpServletResponse response) throws IOException {
-        response.setStatus(HttpStatus.TOO_MANY_REQUESTS.value());
-        response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-        response.getWriter().write("""
-            {
-              "error": "Too many requests. Try again later."
-            }
-            """);
-        response.getWriter().flush();
     }
 }
