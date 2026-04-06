@@ -43,9 +43,12 @@ public abstract class AbstractIntegrationTest {
 
     @Container
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15")
-        .withDatabaseName("storeflow_test")
-        .withUsername("testuser")
-        .withPassword("testpassword");
+        .withDatabaseName("storeflow_rest_api")
+        .withUsername("storeflow_user")
+        .withPassword("storeflow_test_password")
+        .withLabel("app", "storeflow-rest-api")
+        .withLabel("phase", "phase-1-foundation")
+        .withLabel("environment", "test");
 
     /**
      * Dynamically inject PostgreSQL container properties into Spring context.
