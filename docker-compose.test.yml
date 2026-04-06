@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  storeflow-test-db:
+    image: postgres:15-alpine
+    container_name: storeflow-rest-api-test-db
+    environment:
+      POSTGRES_DB: storeflow_rest_api
+      POSTGRES_USER: storeflow_user
+      POSTGRES_PASSWORD: storeflow_test_password
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U storeflow_user -d storeflow_rest_api"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - storeflow_test_data:/var/lib/postgresql/data
+
+volumes:
+  storeflow_test_data:
+    driver: local
