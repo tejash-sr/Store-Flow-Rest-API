@@ -17,6 +17,7 @@ import java.math.BigDecimal;
     @UniqueConstraint(columnNames = "sku")
 })
 @Data
+@EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

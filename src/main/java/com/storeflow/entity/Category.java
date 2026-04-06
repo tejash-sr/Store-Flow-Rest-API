@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
     @UniqueConstraint(columnNames = "name")
 })
 @Data
+@EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

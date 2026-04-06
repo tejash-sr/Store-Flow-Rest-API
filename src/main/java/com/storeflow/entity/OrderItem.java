@@ -14,6 +14,7 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "order_items")
 @Data
+@EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
