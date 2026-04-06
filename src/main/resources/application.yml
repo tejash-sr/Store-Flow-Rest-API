@@ -1,0 +1,81 @@
+spring:
+  application:
+    name: StoreFlow API
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        use_sql_comments: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/storeflow
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    baseline-version: 0
+  sql:
+    init:
+      mode: never
+  jackson:
+    serialization:
+      indent-output: false
+    default-property-inclusion: non_null
+  security:
+    cors:
+      allowed-origins: localhost:3000, localhost:4200
+      allowed-methods: GET,POST,PUT,PATCH,DELETE,OPTIONS
+      allowed-headers: "*"
+      max-age: 3600
+    csrf:
+      enabled: false
+
+server:
+  servlet:
+    context-path: /
+  shutdown: graceful
+  compression:
+    enabled: true
+    min-response-size: 1024
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus,info
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: when-authorized
+      show-components: when-authorized
+
+logging:
+  level:
+    com.storeflow: DEBUG
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# Application-specific properties
+app:
+  jwt:
+    secret: ${JWT_SECRET:your-secret-key-change-in-production}
+    expiration-ms: 900000 # 15 minutes
+    refresh-expiration-ms: 604800000 # 7 days
+  storage:
+    base-path: /uploads
+  email:
+    from: noreply@storeflow.com
+    from-name: StoreFlow
+  rate-limit:
+    enabled: true
+    max-requests: 5
+    window-minutes: 15
