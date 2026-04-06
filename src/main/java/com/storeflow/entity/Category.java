@@ -33,5 +33,6 @@ public class Category extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false)
+    @Builder.Default
     private CategoryStatus status = CategoryStatus.ACTIVE;
 }

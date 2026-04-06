@@ -35,6 +35,7 @@ public class User extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "role", nullable = false)
+    @Builder.Default
     private UserRole role = UserRole.USER;
 
     @Column(name = "avatar_path", length = 500)
@@ -47,6 +48,7 @@ public class User extends BaseEntity {
     private Instant resetTokenExpiresAt;
 
     @Column(name = "enabled", nullable = false)
+    @Builder.Default
     private Boolean enabled = true;
 
     /**

@@ -46,6 +46,7 @@ public class Product extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false)
+    @Builder.Default
     private ProductStatus status = ProductStatus.ACTIVE;
 
     @Column(name = "deleted_at")
