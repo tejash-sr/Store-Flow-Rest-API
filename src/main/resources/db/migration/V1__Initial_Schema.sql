@@ -1,0 +1,4 @@
+-- V1__Initial_Schema.sql
+-- Phase 1: Initial database schema setup
+-- No tables created yet - application uses DDL-auto: create-drop for entity mapping
+-- This migration file satisfies Flyway versioning requirement
