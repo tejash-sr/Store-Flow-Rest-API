@@ -40,6 +40,14 @@ management:
   endpoint:
     health:
       show-details: always
+      show-components: always
+  health:
+    livenessState:
+      enabled: false
+    readinessState:
+      enabled: false
+    health:
+      show-details: always
 
 logging:
   level:
