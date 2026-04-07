@@ -1,5 +1,6 @@
 package com.storeflow.repository;
 
+import com.storeflow.AbstractRepositoryTest;
 import com.storeflow.entity.Category;
 import com.storeflow.entity.Product;
 import com.storeflow.enums.CategoryStatus;
@@ -15,7 +16,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("ProductRepository Tests")
-class ProductRepositoryTest extends AbstractDataJpaTest {
+class ProductRepositoryTest extends AbstractRepositoryTest {
 
     @Autowired
     private ProductRepository productRepo;

@@ -11,15 +11,16 @@ import static org.junit.jupiter.api.Assertions.*;
  * Flyway migration verification integration tests
  * Ensures all database migrations apply cleanly to PostgreSQL
  * 
- * Extends AbstractIntegrationTest to get:
+ * Extends AbstractDatabaseIntegrationTest to get:
  * - Full Spring Boot context (@SpringBootTest)
  * - Testcontainers PostgreSQL database
- * - Flyway auto-configuration for true integration testing
+ * - Flyway auto-configuration enabled
+ * - @DynamicPropertySource for datasource injection
  * 
  * Per Phase 2.4 exercise requirements: "Flyway: all migration scripts apply cleanly"
  */
 @DisplayName("Flyway Migration Integration Tests")
-class FlywayMigrationTest extends AbstractIntegrationTest {
+class FlywayMigrationTest extends AbstractDatabaseIntegrationTest {
 
     @Autowired
     private Flyway flyway;

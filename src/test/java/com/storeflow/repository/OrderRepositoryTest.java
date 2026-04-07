@@ -1,5 +1,6 @@
 package com.storeflow.repository;
 
+import com.storeflow.AbstractRepositoryTest;
 import com.storeflow.entity.*;
 import com.storeflow.enums.CategoryStatus;
 import com.storeflow.enums.OrderStatus;
@@ -16,7 +17,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("OrderRepository and OrderItem Tests")
-class OrderRepositoryTest extends AbstractDataJpaTest {
+class OrderRepositoryTest extends AbstractRepositoryTest {
 
     @Autowired
     private OrderRepository orderRepo;

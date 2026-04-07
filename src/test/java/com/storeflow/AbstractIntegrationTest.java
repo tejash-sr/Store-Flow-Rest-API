@@ -13,4 +13,5 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
 public abstract class AbstractIntegrationTest {
+    // No Testcontainers here — health, middleware, exception handler tests use this
 }
