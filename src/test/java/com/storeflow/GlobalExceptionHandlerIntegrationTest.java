@@ -85,15 +85,14 @@ class GlobalExceptionHandlerIntegrationTest extends AbstractIntegrationTest {
     }
 
     @Test
-    @DisplayName("RuntimeException returns 500 with complete error response structure")
-    void testRuntimeException_Returns500WithStructuredResponse() throws Exception {
-        // Test a POST request that would fail with 400 validation error normally
-        // POST /api/health is not implemented (should return 405 or 404), 
-        // but we verify the error structure includes all required fields
+    @DisplayName("Invalid endpoint returns 404 with complete error response structure (all required fields)")
+    void testErrorResponse_IncludesAllRequiredFields() throws Exception {
+        // Verify error response structure includes all required fields: 
+        // status, error, message, timestamp (ISO format), and path
         mockMvc.perform(post("/api/invalid-endpoint"))
             .andExpect(status().isNotFound())
             .andExpect(content().contentType(APPLICATION_JSON))
-            .andExpect(jsonPath("$.status").exists())
+            .andExpect(jsonPath("$.status").value(404))
             .andExpect(jsonPath("$.error").exists())
             .andExpect(jsonPath("$.message").exists())
             .andExpect(jsonPath("$.timestamp").exists())
