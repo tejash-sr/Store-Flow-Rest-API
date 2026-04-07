@@ -1,5 +1,6 @@
 package com.storeflow.repository;
 
+import com.storeflow.AbstractRepositoryTest;
 import com.storeflow.entity.User;
 import com.storeflow.enums.UserRole;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,7 +13,7 @@ import java.time.Instant;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("UserRepository Tests")
-class UserRepositoryTest extends AbstractDataJpaTest {
+class UserRepositoryTest extends AbstractRepositoryTest {
 
     @Autowired
     private UserRepository sut;

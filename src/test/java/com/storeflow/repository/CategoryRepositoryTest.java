@@ -1,5 +1,6 @@
 package com.storeflow.repository;
 
+import com.storeflow.AbstractRepositoryTest;
 import com.storeflow.entity.Category;
 import com.storeflow.enums.CategoryStatus;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("CategoryRepository Tests")
-class CategoryRepositoryTest extends AbstractDataJpaTest {
+class CategoryRepositoryTest extends AbstractRepositoryTest {
 
     @Autowired
     private CategoryRepository sut;
