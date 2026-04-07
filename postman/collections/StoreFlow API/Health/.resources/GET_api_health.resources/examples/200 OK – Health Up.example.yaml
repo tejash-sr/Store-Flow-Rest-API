@@ -1,0 +1,23 @@
+$kind: http-example
+name: '200 OK – Health UP'
+request:
+  url: 'http://localhost:8080/api/health'
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: Content-Type
+      value: application/json
+    - key: X-Trace-Id
+      value: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890'
+    - key: Access-Control-Allow-Origin
+      value: '*'
+  body:
+    type: json
+    content: |-
+      {
+        "status": "UP",
+        "timestamp": "2025-04-06T18:30:00.123456Z",
+        "jvmUptimeMs": 54321
+      }
