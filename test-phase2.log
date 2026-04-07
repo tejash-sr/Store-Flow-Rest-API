@@ -1,0 +1,1373 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.storeflow:storeflow-api >---------------------
+[INFO] Building StoreFlow API 0.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ storeflow-api ---
+[INFO] Deleting /home/tejas/storeflow-api/target
+[INFO] 
+[INFO] --- jacoco:0.8.10:prepare-agent (default) @ storeflow-api ---
+[INFO] argLine set to -javaagent:/home/tejas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.10/org.jacoco.agent-0.8.10-runtime.jar=destfile=/home/tejas/storeflow-api/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ storeflow-api ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ storeflow-api ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 32 source files with javac [debug parameters release 21] to target/classes
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Category.java:[36,28] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Product.java:[49,27] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Order.java:[35,25] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/User.java:[38,22] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/User.java:[50,21] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Category.java:[18,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Product.java:[19,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Order.java:[16,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/OrderItem.java:[16,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/User.java:[20,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ storeflow-api ---
+[INFO] skip non existing resourceDirectory /home/tejas/storeflow-api/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ storeflow-api ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 13 source files with javac [debug parameters release 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0-M9:test (default-test) @ storeflow-api ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.storeflow.GlobalExceptionHandlerIntegrationTest
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+22:28:48.805 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.storeflow.GlobalExceptionHandlerIntegrationTest]: GlobalExceptionHandlerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:28:49.520 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.storeflow.StoreFlowApplication for test class com.storeflow.GlobalExceptionHandlerIntegrationTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-04-06 22:28:52 - Starting GlobalExceptionHandlerIntegrationTest using Java 21.0.10 with PID 1953 (started by tejas in /home/tejas/storeflow-api)
+2026-04-06 22:28:52 - Running with Spring Boot v3.3.0, Spring v6.1.8
+2026-04-06 22:28:52 - The following 1 profile is active: "test"
+2026-04-06 22:29:02 - HikariPool-1 - Starting...
+2026-04-06 22:29:03 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67662433
+2026-04-06 22:29:03 - HikariPool-1 - Start completed.
+2026-04-06 22:29:03 - Database: jdbc:postgresql://localhost:5433/storeflow_rest_api (PostgreSQL 15.17)
+2026-04-06 22:29:04 - Successfully validated 5 migrations (execution time 00:00.199s)
+2026-04-06 22:29:04 - Current version of schema "public": 1
+2026-04-06 22:29:04 - Migrating schema "public" to version "2 - create users"
+2026-04-06 22:29:04 - Migrating schema "public" to version "3 - create categories"
+2026-04-06 22:29:04 - Migrating schema "public" to version "4 - create products"
+2026-04-06 22:29:04 - Migrating schema "public" to version "5 - create orders and items"
+2026-04-06 22:29:04 - Successfully applied 4 migrations to schema "public", now at version v5 (execution time 00:00.468s)
+2026-04-06 22:29:06 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06 22:29:08 - alter table if exists categories drop constraint if exists FKsaok720gsu4u2wrgbk10b5n8d
+2026-04-06 22:29:08 - SQL Warning Code: 0, SQLState: 00000
+2026-04-06 22:29:08 - constraint "fksaok720gsu4u2wrgbk10b5n8d" of relation "categories" does not exist, skipping
+2026-04-06 22:29:08 - alter table if exists order_items drop constraint if exists FKbioxgbv59vetrxe0ejfubep1w
+2026-04-06 22:29:08 - SQL Warning Code: 0, SQLState: 00000
+2026-04-06 22:29:08 - constraint "fkbioxgbv59vetrxe0ejfubep1w" of relation "order_items" does not exist, skipping
+2026-04-06 22:29:08 - alter table if exists order_items drop constraint if exists FKocimc7dtr037rh4ls4l95nlfi
+2026-04-06 22:29:08 - SQL Warning Code: 0, SQLState: 00000
+2026-04-06 22:29:08 - constraint "fkocimc7dtr037rh4ls4l95nlfi" of relation "order_items" does not exist, skipping
+2026-04-06 22:29:08 - alter table if exists orders drop constraint if exists FKsjfs85qf6vmcurlx43cnc16gy
+2026-04-06 22:29:08 - SQL Warning Code: 0, SQLState: 00000
+2026-04-06 22:29:08 - constraint "fksjfs85qf6vmcurlx43cnc16gy" of relation "orders" does not exist, skipping
+2026-04-06 22:29:08 - alter table if exists products drop constraint if exists FKog2rp4qthbtt2lfyhfo32lsw9
+2026-04-06 22:29:08 - SQL Warning Code: 0, SQLState: 00000
+2026-04-06 22:29:08 - constraint "fkog2rp4qthbtt2lfyhfo32lsw9" of relation "products" does not exist, skipping
+2026-04-06 22:29:08 - drop table if exists categories cascade
+2026-04-06 22:29:08 - SQL Warning Code: 0, SQLState: 00000
+2026-04-06 22:29:08 - drop cascades to constraint fk_products_category on table products
+2026-04-06 22:29:08 - drop table if exists order_items cascade
+2026-04-06 22:29:08 - drop table if exists orders cascade
+2026-04-06 22:29:08 - drop table if exists products cascade
+2026-04-06 22:29:08 - drop table if exists users cascade
+2026-04-06 22:29:08 - create table categories (created_at timestamp(6) with time zone not null, id bigint generated by default as identity, parent_id bigint, updated_at timestamp(6) with time zone not null, name varchar(100) not null unique, description varchar(1000), status varchar(255) not null check (status in ('ACTIVE','INACTIVE')), primary key (id))
+2026-04-06 22:29:08 - create table order_items (quantity integer not null, subtotal numeric(12,2) not null, unit_price numeric(10,2) not null, created_at timestamp(6) with time zone not null, id bigint generated by default as identity, order_id bigint not null, product_id bigint not null, updated_at timestamp(6) with time zone not null, primary key (id))
+2026-04-06 22:29:08 - create table orders (total_amount numeric(12,2) not null, created_at timestamp(6) with time zone not null, customer_id bigint not null, id bigint generated by default as identity, updated_at timestamp(6) with time zone not null, shipping_postal_code varchar(20) not null, reference_number varchar(50) not null unique, shipping_city varchar(100) not null, shipping_country varchar(100) not null, shipping_street varchar(255) not null, status varchar(255) not null check (status in ('PENDING','CONFIRMED','SHIPPED','DELIVERED','CANCELLED')), primary key (id))
+2026-04-06 22:29:09 - create table products (price numeric(10,2) not null, stock_quantity integer not null, category_id bigint not null, created_at timestamp(6) with time zone not null, deleted_at timestamp(6) with time zone, id bigint generated by default as identity, updated_at timestamp(6) with time zone not null, sku varchar(50) not null unique, name varchar(150) not null, image_url varchar(500), description varchar(3000) not null, status varchar(255) not null check (status in ('ACTIVE','INACTIVE','DISCONTINUED')), primary key (id))
+2026-04-06 22:29:09 - create table users (enabled boolean not null, created_at timestamp(6) with time zone not null, id bigint generated by default as identity, reset_token_expires_at timestamp(6) with time zone, updated_at timestamp(6) with time zone not null, full_name varchar(100) not null, avatar_path varchar(500), reset_token varchar(500), email varchar(255) not null unique, password varchar(255) not null, role varchar(255) not null check (role in ('USER','ADMIN')), primary key (id))
+2026-04-06 22:29:09 - alter table if exists categories add constraint FKsaok720gsu4u2wrgbk10b5n8d foreign key (parent_id) references categories
+2026-04-06 22:29:09 - alter table if exists order_items add constraint FKbioxgbv59vetrxe0ejfubep1w foreign key (order_id) references orders
+2026-04-06 22:29:09 - alter table if exists order_items add constraint FKocimc7dtr037rh4ls4l95nlfi foreign key (product_id) references products
+2026-04-06 22:29:09 - alter table if exists orders add constraint FKsjfs85qf6vmcurlx43cnc16gy foreign key (customer_id) references users
+2026-04-06 22:29:09 - alter table if exists products add constraint FKog2rp4qthbtt2lfyhfo32lsw9 foreign key (category_id) references categories
+2026-04-06 22:29:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06 22:29:09 - 
+
+Using generated security password: 6f57ad50-efae-423b-b5da-165e8c97c9d6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06 22:29:14 - Filter 'requestLoggingFilter' configured for use
+2026-04-06 22:29:14 - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-06 22:29:14 - Filter 'rateLimitingFilter' configured for use
+2026-04-06 22:29:14 - Started GlobalExceptionHandlerIntegrationTest in 24.021 seconds (process running for 30.754)
+WARNING: A Java agent has been loaded dynamically (/home/tejas/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.16/byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-04-06 22:29:15 - No mapping for GET /api/test1
+2026-04-06 22:29:15 - 404 Not Found: /api/test1
+2026-04-06 22:29:15 - HTTP GET /api/test1 -> 404 (182ms)
+2026-04-06 22:29:15 - No mapping for GET /api/test2
+2026-04-06 22:29:15 - 404 Not Found: /api/test2
+2026-04-06 22:29:15 - HTTP GET /api/test2 -> 404 (12ms)
+2026-04-06 22:29:15 - No mapping for GET /api/invalid/path/here
+2026-04-06 22:29:15 - 404 Not Found: /api/invalid/path/here
+2026-04-06 22:29:15 - HTTP GET /api/invalid/path/here -> 404 (31ms)
+2026-04-06 22:29:15 - No mapping for POST /api/invalid-endpoint
+2026-04-06 22:29:15 - 404 Not Found: /api/invalid-endpoint
+2026-04-06 22:29:15 - HTTP POST /api/invalid-endpoint -> 404 (10ms)
+2026-04-06 22:29:16 - 405 Method Not Allowed: POST Request method 'POST' is not supported
+2026-04-06 22:29:16 - HTTP POST /api/health -> 405 (13ms)
+2026-04-06 22:29:16 - No mapping for GET /api/unreachable
+2026-04-06 22:29:16 - 404 Not Found: /api/unreachable
+2026-04-06 22:29:16 - HTTP GET /api/unreachable -> 404 (7ms)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.401 s - in com.storeflow.GlobalExceptionHandlerIntegrationTest
+[INFO] Running com.storeflow.exception.GlobalExceptionHandlerTest
+2026-04-06 22:29:16 - Unhandled exception
+java.lang.RuntimeException: Unexpected error
+	at com.storeflow.exception.GlobalExceptionHandlerTest.testHandleGenericException_Returns500(GlobalExceptionHandlerTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+2026-04-06 22:29:16 - 404 Not Found: /api/nonexistent
+2026-04-06 22:29:16 - 404 Not Found: /api/test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in com.storeflow.exception.GlobalExceptionHandlerTest
+[INFO] Running com.storeflow.middleware.RequestLoggingFilterTest
+2026-04-06 22:29:17 - HTTP null null -> 0 (1ms)
+2026-04-06 22:29:17 - HTTP null null -> 0 (0ms)
+2026-04-06 22:29:17 - HTTP null null -> 0 (0ms)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.292 s - in com.storeflow.middleware.RequestLoggingFilterTest
+[INFO] Running com.storeflow.HealthControllerIntegrationTest
+2026-04-06 22:29:17 - Health check requested
+2026-04-06 22:29:17 - HTTP GET /api/health -> 200 (101ms)
+2026-04-06 22:29:17 - No mapping for GET /api/nonexistent
+2026-04-06 22:29:17 - 404 Not Found: /api/nonexistent
+2026-04-06 22:29:17 - HTTP GET /api/nonexistent -> 404 (31ms)
+2026-04-06 22:29:17 - Health check requested
+2026-04-06 22:29:17 - HTTP GET /api/health -> 200 (13ms)
+2026-04-06 22:29:18 - Health check requested
+2026-04-06 22:29:18 - HTTP GET /api/health -> 200 (22ms)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.49 s - in com.storeflow.HealthControllerIntegrationTest
+[INFO] Running com.storeflow.repository.CategoryRepositoryTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-04-06 22:29:18 - Starting CategoryRepositoryTest using Java 21.0.10 with PID 1953 (started by tejas in /home/tejas/storeflow-api)
+2026-04-06 22:29:18 - Running with Spring Boot v3.3.0, Spring v6.1.8
+2026-04-06 22:29:18 - The following 1 profile is active: "test"
+2026-04-06 22:29:19 - HikariPool-2 - Starting...
+2026-04-06 22:29:19 - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@79a743dd
+2026-04-06 22:29:19 - HikariPool-2 - Start completed.
+2026-04-06 22:29:19 - Database: jdbc:postgresql://localhost:5433/storeflow_rest_api (PostgreSQL 15.17)
+2026-04-06 22:29:19 - Successfully validated 5 migrations (execution time 00:00.030s)
+2026-04-06 22:29:19 - Current version of schema "public": 5
+2026-04-06 22:29:19 - Schema "public" is up to date. No migration necessary.
+2026-04-06 22:29:20 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06 22:29:20 - alter table if exists categories drop constraint if exists FKsaok720gsu4u2wrgbk10b5n8d
+Hibernate: alter table if exists categories drop constraint if exists FKsaok720gsu4u2wrgbk10b5n8d
+2026-04-06 22:29:20 - alter table if exists order_items drop constraint if exists FKbioxgbv59vetrxe0ejfubep1w
+Hibernate: alter table if exists order_items drop constraint if exists FKbioxgbv59vetrxe0ejfubep1w
+2026-04-06 22:29:20 - alter table if exists order_items drop constraint if exists FKocimc7dtr037rh4ls4l95nlfi
+Hibernate: alter table if exists order_items drop constraint if exists FKocimc7dtr037rh4ls4l95nlfi
+2026-04-06 22:29:20 - alter table if exists orders drop constraint if exists FKsjfs85qf6vmcurlx43cnc16gy
+Hibernate: alter table if exists orders drop constraint if exists FKsjfs85qf6vmcurlx43cnc16gy
+2026-04-06 22:29:20 - alter table if exists products drop constraint if exists FKog2rp4qthbtt2lfyhfo32lsw9
+Hibernate: alter table if exists products drop constraint if exists FKog2rp4qthbtt2lfyhfo32lsw9
+2026-04-06 22:29:20 - drop table if exists categories cascade
+Hibernate: drop table if exists categories cascade
+2026-04-06 22:29:20 - drop table if exists order_items cascade
+Hibernate: drop table if exists order_items cascade
+2026-04-06 22:29:20 - drop table if exists orders cascade
+Hibernate: drop table if exists orders cascade
+2026-04-06 22:29:20 - drop table if exists products cascade
+Hibernate: drop table if exists products cascade
+2026-04-06 22:29:20 - drop table if exists users cascade
+Hibernate: drop table if exists users cascade
+2026-04-06 22:29:20 - create table categories (created_at timestamp(6) with time zone not null, id bigint generated by default as identity, parent_id bigint, updated_at timestamp(6) with time zone not null, name varchar(100) not null unique, description varchar(1000), status varchar(255) not null check (status in ('ACTIVE','INACTIVE')), primary key (id))
+Hibernate: create table categories (created_at timestamp(6) with time zone not null, id bigint generated by default as identity, parent_id bigint, updated_at timestamp(6) with time zone not null, name varchar(100) not null unique, description varchar(1000), status varchar(255) not null check (status in ('ACTIVE','INACTIVE')), primary key (id))
+2026-04-06 22:29:20 - create table order_items (quantity integer not null, subtotal numeric(12,2) not null, unit_price numeric(10,2) not null, created_at timestamp(6) with time zone not null, id bigint generated by default as identity, order_id bigint not null, product_id bigint not null, updated_at timestamp(6) with time zone not null, primary key (id))
+Hibernate: create table order_items (quantity integer not null, subtotal numeric(12,2) not null, unit_price numeric(10,2) not null, created_at timestamp(6) with time zone not null, id bigint generated by default as identity, order_id bigint not null, product_id bigint not null, updated_at timestamp(6) with time zone not null, primary key (id))
+2026-04-06 22:29:20 - create table orders (total_amount numeric(12,2) not null, created_at timestamp(6) with time zone not null, customer_id bigint not null, id bigint generated by default as identity, updated_at timestamp(6) with time zone not null, shipping_postal_code varchar(20) not null, reference_number varchar(50) not null unique, shipping_city varchar(100) not null, shipping_country varchar(100) not null, shipping_street varchar(255) not null, status varchar(255) not null check (status in ('PENDING','CONFIRMED','SHIPPED','DELIVERED','CANCELLED')), primary key (id))
+Hibernate: create table orders (total_amount numeric(12,2) not null, created_at timestamp(6) with time zone not null, customer_id bigint not null, id bigint generated by default as identity, updated_at timestamp(6) with time zone not null, shipping_postal_code varchar(20) not null, reference_number varchar(50) not null unique, shipping_city varchar(100) not null, shipping_country varchar(100) not null, shipping_street varchar(255) not null, status varchar(255) not null check (status in ('PENDING','CONFIRMED','SHIPPED','DELIVERED','CANCELLED')), primary key (id))
+2026-04-06 22:29:21 - create table products (price numeric(10,2) not null, stock_quantity integer not null, category_id bigint not null, created_at timestamp(6) with time zone not null, deleted_at timestamp(6) with time zone, id bigint generated by default as identity, updated_at timestamp(6) with time zone not null, sku varchar(50) not null unique, name varchar(150) not null, image_url varchar(500), description varchar(3000) not null, status varchar(255) not null check (status in ('ACTIVE','INACTIVE','DISCONTINUED')), primary key (id))
+Hibernate: create table products (price numeric(10,2) not null, stock_quantity integer not null, category_id bigint not null, created_at timestamp(6) with time zone not null, deleted_at timestamp(6) with time zone, id bigint generated by default as identity, updated_at timestamp(6) with time zone not null, sku varchar(50) not null unique, name varchar(150) not null, image_url varchar(500), description varchar(3000) not null, status varchar(255) not null check (status in ('ACTIVE','INACTIVE','DISCONTINUED')), primary key (id))
+2026-04-06 22:29:21 - create table users (enabled boolean not null, created_at timestamp(6) with time zone not null, id bigint generated by default as identity, reset_token_expires_at timestamp(6) with time zone, updated_at timestamp(6) with time zone not null, full_name varchar(100) not null, avatar_path varchar(500), reset_token varchar(500), email varchar(255) not null unique, password varchar(255) not null, role varchar(255) not null check (role in ('USER','ADMIN')), primary key (id))
+Hibernate: create table users (enabled boolean not null, created_at timestamp(6) with time zone not null, id bigint generated by default as identity, reset_token_expires_at timestamp(6) with time zone, updated_at timestamp(6) with time zone not null, full_name varchar(100) not null, avatar_path varchar(500), reset_token varchar(500), email varchar(255) not null unique, password varchar(255) not null, role varchar(255) not null check (role in ('USER','ADMIN')), primary key (id))
+2026-04-06 22:29:21 - alter table if exists categories add constraint FKsaok720gsu4u2wrgbk10b5n8d foreign key (parent_id) references categories
+Hibernate: alter table if exists categories add constraint FKsaok720gsu4u2wrgbk10b5n8d foreign key (parent_id) references categories
+2026-04-06 22:29:21 - alter table if exists order_items add constraint FKbioxgbv59vetrxe0ejfubep1w foreign key (order_id) references orders
+Hibernate: alter table if exists order_items add constraint FKbioxgbv59vetrxe0ejfubep1w foreign key (order_id) references orders
+2026-04-06 22:29:21 - alter table if exists order_items add constraint FKocimc7dtr037rh4ls4l95nlfi foreign key (product_id) references products
+Hibernate: alter table if exists order_items add constraint FKocimc7dtr037rh4ls4l95nlfi foreign key (product_id) references products
+2026-04-06 22:29:21 - alter table if exists orders add constraint FKsjfs85qf6vmcurlx43cnc16gy foreign key (customer_id) references users
+Hibernate: alter table if exists orders add constraint FKsjfs85qf6vmcurlx43cnc16gy foreign key (customer_id) references users
+2026-04-06 22:29:21 - alter table if exists products add constraint FKog2rp4qthbtt2lfyhfo32lsw9 foreign key (category_id) references categories
+Hibernate: alter table if exists products add constraint FKog2rp4qthbtt2lfyhfo32lsw9 foreign key (category_id) references categories
+2026-04-06 22:29:21 - Started CategoryRepositoryTest in 3.451 seconds (process running for 38.216)
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:22 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:22 - ERROR: null value in column "status" of relation "categories" violates not-null constraint
+  Detail: Failing row contains (2026-04-06 22:29:21.917064+00, 1, null, 2026-04-06 22:29:21.917064+00, Test Category, null, null).
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.393 s <<< FAILURE! - in com.storeflow.repository.CategoryRepositoryTest
+[ERROR] com.storeflow.repository.CategoryRepositoryTest.testDefaultStatus  Time elapsed: 0.446 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "status" of relation "categories" violates not-null constraint
+  Detail: Failing row contains (2026-04-06 22:29:21.917064+00, 1, null, 2026-04-06 22:29:21.917064+00, Test Category, null, null).] [/* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id]; constraint [status" of relation "categories]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy189.save(Unknown Source)
+	at com.storeflow.repository.CategoryRepositoryTest.testDefaultStatus(CategoryRepositoryTest.java:67)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "status" of relation "categories" violates not-null constraint
+  Detail: Failing row contains (2026-04-06 22:29:21.917064+00, 1, null, 2026-04-06 22:29:21.917064+00, Test Category, null, null).] [/* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "status" of relation "categories" violates not-null constraint
+  Detail: Failing row contains (2026-04-06 22:29:21.917064+00, 1, null, 2026-04-06 22:29:21.917064+00, Test Category, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[INFO] Running com.storeflow.repository.UserRepositoryTest
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:22 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:22 - ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:22.797292+00, 3, null, 2026-04-06 22:29:22.797292+00, Another User, null, null, test@example.com, anotherPassword, null).
+2026-04-06 22:29:22 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:23 - /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-04-06 22:29:23 - /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-04-06 22:29:23 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:23 - /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-04-06 22:29:23 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:23 - /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-04-06 22:29:23 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:23 - /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.reset_token=?
+Hibernate: /* <criteria> */ select u1_0.id,u1_0.avatar_path,u1_0.created_at,u1_0.email,u1_0.enabled,u1_0.full_name,u1_0.password,u1_0.reset_token,u1_0.reset_token_expires_at,u1_0.role,u1_0.updated_at from users u1_0 where u1_0.reset_token=?
+2026-04-06 22:29:23 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:23 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:23 - ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.724066+00, 8, null, 2026-04-06 22:29:23.724066+00, Test, null, null, user@test.com, password123, null).
+[ERROR] Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.22 s <<< FAILURE! - in com.storeflow.repository.UserRepositoryTest
+[ERROR] com.storeflow.repository.UserRepositoryTest.testDefaultUserRole  Time elapsed: 0.034 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.724066+00, 8, null, 2026-04-06 22:29:23.724066+00, Test, null, null, user@test.com, password123, null).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy191.save(Unknown Source)
+	at com.storeflow.repository.UserRepositoryTest.testDefaultUserRole(UserRepositoryTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.724066+00, 8, null, 2026-04-06 22:29:23.724066+00, Test, null, null, user@test.com, password123, null).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.724066+00, 8, null, 2026-04-06 22:29:23.724066+00, Test, null, null, user@test.com, password123, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[INFO] Running com.storeflow.repository.OrderRepositoryTest
+2026-04-06 22:29:23 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:23 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:23 - ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.922152+00, 9, null, 2026-04-06 22:29:23.922152+00, Test Customer, null, null, customer@test.com, password123, USER).
+2026-04-06 22:29:23 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.994567+00, 10, null, 2026-04-06 22:29:23.994567+00, Test Customer, null, null, customer@test.com, password123, USER).
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.064791+00, 11, null, 2026-04-06 22:29:24.064791+00, Test Customer, null, null, customer@test.com, password123, USER).
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.117167+00, 12, null, 2026-04-06 22:29:24.117167+00, Test Customer, null, null, customer@test.com, password123, USER).
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.202884+00, 13, null, 2026-04-06 22:29:24.202884+00, Test Customer, null, null, customer@test.com, password123, USER).
+[ERROR] Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.512 s <<< FAILURE! - in com.storeflow.repository.OrderRepositoryTest
+[ERROR] com.storeflow.repository.OrderRepositoryTest.testTotalAmountConsistency  Time elapsed: 0.068 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.922152+00, 9, null, 2026-04-06 22:29:23.922152+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy191.save(Unknown Source)
+	at com.storeflow.repository.OrderRepositoryTest.setUp(OrderRepositoryTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.922152+00, 9, null, 2026-04-06 22:29:23.922152+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.922152+00, 9, null, 2026-04-06 22:29:23.922152+00, Test Customer, null, null, customer@test.com, password123, USER).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[ERROR] com.storeflow.repository.OrderRepositoryTest.testOrderCascadeOperations  Time elapsed: 0.05 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.994567+00, 10, null, 2026-04-06 22:29:23.994567+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy191.save(Unknown Source)
+	at com.storeflow.repository.OrderRepositoryTest.setUp(OrderRepositoryTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.994567+00, 10, null, 2026-04-06 22:29:23.994567+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.994567+00, 10, null, 2026-04-06 22:29:23.994567+00, Test Customer, null, null, customer@test.com, password123, USER).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[ERROR] com.storeflow.repository.OrderRepositoryTest.testDefaultOrderStatus  Time elapsed: 0.042 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.064791+00, 11, null, 2026-04-06 22:29:24.064791+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy191.save(Unknown Source)
+	at com.storeflow.repository.OrderRepositoryTest.setUp(OrderRepositoryTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.064791+00, 11, null, 2026-04-06 22:29:24.064791+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.064791+00, 11, null, 2026-04-06 22:29:24.064791+00, Test Customer, null, null, customer@test.com, password123, USER).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[ERROR] com.storeflow.repository.OrderRepositoryTest.testSaveValidOrderItem  Time elapsed: 0.054 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.117167+00, 12, null, 2026-04-06 22:29:24.117167+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy191.save(Unknown Source)
+	at com.storeflow.repository.OrderRepositoryTest.setUp(OrderRepositoryTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.117167+00, 12, null, 2026-04-06 22:29:24.117167+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.117167+00, 12, null, 2026-04-06 22:29:24.117167+00, Test Customer, null, null, customer@test.com, password123, USER).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[ERROR] com.storeflow.repository.OrderRepositoryTest.testSaveValidOrder  Time elapsed: 0.054 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.202884+00, 13, null, 2026-04-06 22:29:24.202884+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy191.save(Unknown Source)
+	at com.storeflow.repository.OrderRepositoryTest.setUp(OrderRepositoryTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.202884+00, 13, null, 2026-04-06 22:29:24.202884+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.202884+00, 13, null, 2026-04-06 22:29:24.202884+00, Test Customer, null, null, customer@test.com, password123, USER).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[INFO] Running com.storeflow.repository.ProductRepositoryTest
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (29.99, 3, 6, 2026-04-06 22:29:24.610267+00, null, 2, 2026-04-06 22:29:24.610267+00, MOU-001, Mouse, null, Wireless mouse, null).
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (10.00, 5, 7, 2026-04-06 22:29:24.683229+00, null, 3, 2026-04-06 22:29:24.683229+00, TST-001, Test Product, null, Test, null).
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (399.99, 20, 8, 2026-04-06 22:29:24.745911+00, null, 5, 2026-04-06 22:29:24.745911+00, TAB-001, Tablet, null, Portable tablet, null).
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* <criteria> */ select p1_0.id,p1_0.category_id,p1_0.created_at,p1_0.deleted_at,p1_0.description,p1_0.image_url,p1_0.name,p1_0.price,p1_0.sku,p1_0.status,p1_0.stock_quantity,p1_0.updated_at from products p1_0 where upper(p1_0.sku)=upper(?)
+Hibernate: /* <criteria> */ select p1_0.id,p1_0.category_id,p1_0.created_at,p1_0.deleted_at,p1_0.description,p1_0.image_url,p1_0.name,p1_0.price,p1_0.sku,p1_0.status,p1_0.stock_quantity,p1_0.updated_at from products p1_0 where upper(p1_0.sku)=upper(?)
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+Hibernate: /* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id
+2026-04-06 22:29:24 - SQL Error: 0, SQLState: 23502
+2026-04-06 22:29:24 - ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (799.99, 5, 11, 2026-04-06 22:29:24.899067+00, null, 9, 2026-04-06 22:29:24.899067+00, LAP-001, Another Laptop, null, Different laptop, null).
+[ERROR] Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.63 s <<< FAILURE! - in com.storeflow.repository.ProductRepositoryTest
+[ERROR] com.storeflow.repository.ProductRepositoryTest.testFindAllByStockQuantityLessThan  Time elapsed: 0.158 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (29.99, 3, 6, 2026-04-06 22:29:24.610267+00, null, 2, 2026-04-06 22:29:24.610267+00, MOU-001, Mouse, null, Wireless mouse, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; constraint [status" of relation "products]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.save(Unknown Source)
+	at com.storeflow.repository.ProductRepositoryTest.testFindAllByStockQuantityLessThan(ProductRepositoryTest.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (29.99, 3, 6, 2026-04-06 22:29:24.610267+00, null, 2, 2026-04-06 22:29:24.610267+00, MOU-001, Mouse, null, Wireless mouse, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (29.99, 3, 6, 2026-04-06 22:29:24.610267+00, null, 2, 2026-04-06 22:29:24.610267+00, MOU-001, Mouse, null, Wireless mouse, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[ERROR] com.storeflow.repository.ProductRepositoryTest.testDefaultProductStatus  Time elapsed: 0.043 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (10.00, 5, 7, 2026-04-06 22:29:24.683229+00, null, 3, 2026-04-06 22:29:24.683229+00, TST-001, Test Product, null, Test, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; constraint [status" of relation "products]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.save(Unknown Source)
+	at com.storeflow.repository.ProductRepositoryTest.testDefaultProductStatus(ProductRepositoryTest.java:138)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (10.00, 5, 7, 2026-04-06 22:29:24.683229+00, null, 3, 2026-04-06 22:29:24.683229+00, TST-001, Test Product, null, Test, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (10.00, 5, 7, 2026-04-06 22:29:24.683229+00, null, 3, 2026-04-06 22:29:24.683229+00, TST-001, Test Product, null, Test, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[ERROR] com.storeflow.repository.ProductRepositoryTest.testFindByCategory  Time elapsed: 0.048 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (399.99, 20, 8, 2026-04-06 22:29:24.745911+00, null, 5, 2026-04-06 22:29:24.745911+00, TAB-001, Tablet, null, Portable tablet, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; constraint [status" of relation "products]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.save(Unknown Source)
+	at com.storeflow.repository.ProductRepositoryTest.testFindByCategory(ProductRepositoryTest.java:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (399.99, 20, 8, 2026-04-06 22:29:24.745911+00, null, 5, 2026-04-06 22:29:24.745911+00, TAB-001, Tablet, null, Portable tablet, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:97)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:145)
+	at org.hibernate.id.insert.InsertReturningDelegate.executeAndExtractReturning(InsertReturningDelegate.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performMutation(AbstractReturningDelegate.java:58)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy183.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (399.99, 20, 8, 2026-04-06 22:29:24.745911+00, null, 5, 2026-04-06 22:29:24.745911+00, TAB-001, Tablet, null, Portable tablet, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:180)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.execute(ResultSetReturnImpl.java:129)
+	... 59 more
+
+[INFO] Running com.storeflow.controller.HealthControllerTest
+2026-04-06 22:29:24 - Health check requested
+2026-04-06 22:29:24 - Health check requested
+2026-04-06 22:29:24 - Health check requested
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in com.storeflow.controller.HealthControllerTest
+[INFO] Running com.storeflow.dto.ErrorResponseTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in com.storeflow.dto.ErrorResponseTest
+[INFO] Running com.storeflow.MiddlewareSecurityIntegrationTest
+2026-04-06 22:29:25 - Health check requested
+2026-04-06 22:29:25 - HTTP GET /api/health -> 200 (64ms)
+2026-04-06 22:29:25 - HTTP GET /actuator/health -> 200 (183ms)
+2026-04-06 22:29:25 - Health check requested
+2026-04-06 22:29:25 - HTTP GET /api/health -> 200 (11ms)
+2026-04-06 22:29:25 - Health check requested
+2026-04-06 22:29:25 - HTTP GET /api/health -> 200 (17ms)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.419 s - in com.storeflow.MiddlewareSecurityIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   CategoryRepositoryTest.testDefaultStatus:67 » DataIntegrityViolation could not execute statement [ERROR: null value in column "status" of relation "categories" violates not-null constraint
+  Detail: Failing row contains (2026-04-06 22:29:21.917064+00, 1, null, 2026-04-06 22:29:21.917064+00, Test Category, null, null).] [/* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Category */insert into categories (created_at,description,name,parent_id,status,updated_at) values (?,?,?,?,?,?) returning id]; constraint [status" of relation "categories]
+[ERROR]   OrderRepositoryTest.setUp:49 » DataIntegrityViolation could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.064791+00, 11, null, 2026-04-06 22:29:24.064791+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+[ERROR]   OrderRepositoryTest.setUp:49 » DataIntegrityViolation could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.994567+00, 10, null, 2026-04-06 22:29:23.994567+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+[ERROR]   OrderRepositoryTest.setUp:49 » DataIntegrityViolation could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.202884+00, 13, null, 2026-04-06 22:29:24.202884+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+[ERROR]   OrderRepositoryTest.setUp:49 » DataIntegrityViolation could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:24.117167+00, 12, null, 2026-04-06 22:29:24.117167+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+[ERROR]   OrderRepositoryTest.setUp:49 » DataIntegrityViolation could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.922152+00, 9, null, 2026-04-06 22:29:23.922152+00, Test Customer, null, null, customer@test.com, password123, USER).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+[ERROR]   ProductRepositoryTest.testDefaultProductStatus:138 » DataIntegrityViolation could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (10.00, 5, 7, 2026-04-06 22:29:24.683229+00, null, 3, 2026-04-06 22:29:24.683229+00, TST-001, Test Product, null, Test, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; constraint [status" of relation "products]
+[ERROR]   ProductRepositoryTest.testFindAllByStockQuantityLessThan:119 » DataIntegrityViolation could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (29.99, 3, 6, 2026-04-06 22:29:24.610267+00, null, 2, 2026-04-06 22:29:24.610267+00, MOU-001, Mouse, null, Wireless mouse, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; constraint [status" of relation "products]
+[ERROR]   ProductRepositoryTest.testFindByCategory:100 » DataIntegrityViolation could not execute statement [ERROR: null value in column "status" of relation "products" violates not-null constraint
+  Detail: Failing row contains (399.99, 20, 8, 2026-04-06 22:29:24.745911+00, null, 5, 2026-04-06 22:29:24.745911+00, TAB-001, Tablet, null, Portable tablet, null).] [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.Product */insert into products (category_id,created_at,deleted_at,description,image_url,name,price,sku,status,stock_quantity,updated_at) values (?,?,?,?,?,?,?,?,?,?,?) returning id]; constraint [status" of relation "products]
+[ERROR]   UserRepositoryTest.testDefaultUserRole:56 » DataIntegrityViolation could not execute statement [ERROR: null value in column "enabled" of relation "users" violates not-null constraint
+  Detail: Failing row contains (null, 2026-04-06 22:29:23.724066+00, 8, null, 2026-04-06 22:29:23.724066+00, Test, null, null, user@test.com, password123, null).] [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; SQL [/* insert for com.storeflow.entity.User */insert into users (avatar_path,created_at,email,enabled,full_name,password,reset_token,reset_token_expires_at,role,updated_at) values (?,?,?,?,?,?,?,?,?,?) returning id]; constraint [enabled" of relation "users]
+[INFO] 
+[ERROR] Tests run: 50, Failures: 0, Errors: 10, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  52.460 s
+[INFO] Finished at: 2026-04-06T22:29:26Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M9:test (default-test) on project storeflow-api: 
+[ERROR] 
+[ERROR] Please refer to /home/tejas/storeflow-api/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

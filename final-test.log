@@ -1,0 +1,59 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.storeflow:storeflow-api >---------------------
+[INFO] Building StoreFlow API 0.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ storeflow-api ---
+[INFO] Deleting /home/tejas/storeflow-api/target
+[INFO] 
+[INFO] --- jacoco:0.8.10:prepare-agent (default) @ storeflow-api ---
+[INFO] argLine set to -javaagent:/home/tejas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.10/org.jacoco.agent-0.8.10-runtime.jar=destfile=/home/tejas/storeflow-api/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ storeflow-api ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ storeflow-api ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 32 source files with javac [debug parameters release 21] to target/classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Product.java:[19,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Category.java:[18,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/OrderItem.java:[16,1] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[INFO] 3 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Category.java:[19,2] cannot find symbol
+  symbol: class EqualsAndHashCode
+[ERROR] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/OrderItem.java:[17,2] cannot find symbol
+  symbol: class EqualsAndHashCode
+[ERROR] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Product.java:[20,2] cannot find symbol
+  symbol: class EqualsAndHashCode
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.874 s
+[INFO] Finished at: 2026-04-06T22:40:00Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project storeflow-api: Compilation failure: Compilation failure: 
+[ERROR] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Category.java:[19,2] cannot find symbol
+[ERROR]   symbol: class EqualsAndHashCode
+[ERROR] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/OrderItem.java:[17,2] cannot find symbol
+[ERROR]   symbol: class EqualsAndHashCode
+[ERROR] /home/tejas/storeflow-api/src/main/java/com/storeflow/entity/Product.java:[20,2] cannot find symbol
+[ERROR]   symbol: class EqualsAndHashCode
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

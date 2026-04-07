@@ -10,32 +10,23 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 /**
- * Base class for all integration tests in StoreFlow API.
+ * Abstract base class for Spring Boot integration tests
  * 
- * Automatically configures:
- * - @SpringBootTest: Loads full Spring application context
- * - @AutoConfigureMockMvc: Configures MockMvc for controller testing
- * - @ActiveProfiles("test"): Uses application-test.yml configuration
+ * Provides:
+ * - @SpringBootTest: Full Spring application context
+ * - @AutoConfigureMockMvc: MockMvc for controller testing
  * - @Testcontainers: Manages PostgreSQL container lifecycle
+ * - @Container: Isolated PostgreSQL instance per test class hierarchy
  * 
- * Container Setup:
- * - PostgreSQL 15 container (Alpine Linux)
- * - Database: storeflow_rest_api
- * - Username: storeflow_user
- * - Password: storeflow_test_password
- * - Dynamically configured via @DynamicPropertySource
+ * Container Isolation:
+ * Each @Container instance is automatically isolated by Testcontainers.
+ * Tests extending this class share ONE container instance.
+ * Different test classes with their own @Container get SEPARATE isolated containers.
  * 
- * All integration tests must extend this class to inherit the base setup.
- * 
- * Example:
- * <pre>
- * class ProductRepositoryIntegrationTest extends AbstractIntegrationTest {
- *     @Test
- *     void testFindBySkuIgnoreCase() {
- *         // Test code with real database...
- *     }
- * }
- * </pre>
+ * Database Configuration:
+ * - PostgreSQL 15 (Alpine)
+ * - Test database: storeflow_test
+ * - Autonomous container management via @Container
  */
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -45,7 +36,7 @@ public abstract class AbstractIntegrationTest {
 
     @Container
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine")
-        .withDatabaseName("storeflow_rest_api")
+        .withDatabaseName("storeflow_test")
         .withUsername("storeflow_user")
         .withPassword("storeflow_test_password");
 

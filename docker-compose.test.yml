@@ -1,23 +1,13 @@
-version: '3.8'
+# DEPRECATED: This file is no longer used.
+# Testcontainers automatically manages PostgreSQL containers for all tests.
+# 
+# To run tests:
+#   ./mvnw clean test
+#
+# Testcontainers will:
+# 1. Check if Docker is available
+# 2. If available: spin up PostgreSQL containers per test class
+# 3. If unavailable: gracefully skip Testcontainers tests (disabledWithoutDocker=true)
+#
+# No manual docker-compose invocation needed.
 
-services:
-  storeflow-test-db:
-    image: postgres:15-alpine
-    container_name: storeflow-rest-api-test-db
-    environment:
-      POSTGRES_DB: storeflow_rest_api
-      POSTGRES_USER: storeflow_user
-      POSTGRES_PASSWORD: storeflow_test_password
-    ports:
-      - "5433:5432"
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U storeflow_user -d storeflow_rest_api"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-    volumes:
-      - storeflow_test_data:/var/lib/postgresql/data
-
-volumes:
-  storeflow_test_data:
-    driver: local

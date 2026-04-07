@@ -4,23 +4,22 @@ import org.flywaydb.core.Flyway;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.testcontainers.junit.jupiter.Testcontainers;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Flyway migration verification tests
- * Ensures all database migrations apply cleanly
+ * Flyway migration verification integration tests
+ * Ensures all database migrations apply cleanly to PostgreSQL
+ * 
+ * Extends AbstractIntegrationTest to get:
+ * - Full Spring Boot context (@SpringBootTest)
+ * - Testcontainers PostgreSQL database
+ * - Flyway auto-configuration for true integration testing
+ * 
+ * Per Phase 2.4 exercise requirements: "Flyway: all migration scripts apply cleanly"
  */
-@DataJpaTest
-@Testcontainers
-@ActiveProfiles("test")
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-@DisplayName("Flyway Migration Tests")
-class FlywayMigrationTest {
+@DisplayName("Flyway Migration Integration Tests")
+class FlywayMigrationTest extends AbstractIntegrationTest {
 
     @Autowired
     private Flyway flyway;
